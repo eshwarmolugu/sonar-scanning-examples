@@ -50,7 +50,7 @@ agent any
 def sonarTest() {
     
       
-	       withSonarQubeEnv('SonarQube_Cloud') {
+	       withSonarQubeEnv('localSonar') {
 		       sh '${SCANNER_HOME}/bin/sonar-scanner -Dproject.settings=${SCANNER_HOME}/conf/sonar-scanner.properties'
         }
 }
