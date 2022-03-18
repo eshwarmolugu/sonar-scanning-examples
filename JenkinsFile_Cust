@@ -17,7 +17,7 @@ agent any
         stage('J2Sonar') {
                     steps {
                        echo 'sonartest'
-			     sonarTest()
+			     //sonarTest()
                     }
                 }
          
@@ -30,7 +30,7 @@ agent any
 
        
     }  // end stages in Maven Agent
-    post {
+   /* post {
         success {
             echo "Success"
         }
@@ -43,7 +43,8 @@ agent any
         always {
             echo "Send Report"
         }
-    }  // end post
+    } */ 
+	// end post
 }  // end Pipeline
 
 
