@@ -16,7 +16,7 @@ pipeline {
 		echo "${env.WORKSPACE}"
 
 		nodejs('nodejseshwar') {
-		    npm config list
+		   sh "npm -v"
 		}
 		// sh "npm -v"
 		//npm install
