@@ -26,7 +26,6 @@ pipeline {
            steps {
 		echo 'Stage Test'
  		sh "docker -v"
-		docker -v
                 //sh 'mvn test'    
 	            }
             }
