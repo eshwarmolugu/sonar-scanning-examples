@@ -2,13 +2,9 @@
   "name": "sndevopscli",
   "version": "1.0.0",
   "description": "ServiceNow DevOps CLI interface",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "sndevopscli": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "sndevopscli": "src/index.js"
   },
   "author": "",
   "license": "ISC",
