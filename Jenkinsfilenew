@@ -9,8 +9,7 @@ pipeline {
 		echo 'Stage Build'
 		echo "$pwd"
 		echo "${env.WORKSPACE}"
-		echo "cat Jenkinsfilenew"
-		echo "$which npm"
+		npm install .
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
