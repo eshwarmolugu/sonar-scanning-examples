@@ -24,9 +24,10 @@ pipeline {
        stage('Test') {
            steps {
 		echo 'Stage Test'
+		node{
  		sh "docker -v"
-                //sh 'mvn test'    
-	            }
+		} 
+	        }
             }
       stage('Deploy') {
            steps {
