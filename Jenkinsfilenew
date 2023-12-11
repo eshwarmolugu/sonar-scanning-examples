@@ -7,7 +7,7 @@ pipeline {
        stage('Build') {
            steps {
 		echo 'Stage Build'
-		npm install .
+		npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
             }
