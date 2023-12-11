@@ -8,7 +8,7 @@ pipeline {
            steps {
 		echo 'Stage Build'
 		echo $pwd
-		echo ${env.WORKSPACE}
+		echo "${env.WORKSPACE}"
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
