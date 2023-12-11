@@ -24,7 +24,7 @@ pipeline {
        stage('Test') {
            steps {
 		echo 'Stage Test'
-		node{
+		nodejs('nodejseshwar'){
  		sh "docker -v"
 		} 
 	        }
