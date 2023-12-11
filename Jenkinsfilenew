@@ -26,8 +26,6 @@ pipeline {
        stage('Test') {
            steps {
 		echo 'Stage Test'
-		withDockerContainer(image: 'any', toolName: 'dockereshwar') {
-  		sh "docker -v"
 		}
  		
 	        }
