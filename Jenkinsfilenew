@@ -2,7 +2,7 @@ pipeline {
   agent any
   tools {
        maven 'Maven'
-	docker 'dockereshwar'	
+	dockerTool 'dockereshwar'	
         }
   stages {
        stage('CheckOut') {
