@@ -2,7 +2,6 @@ pipeline {
   agent any
   tools {
        maven 'Maven'
-	nodejs 'nodejs'
         }
   stages {
        stage('Build') {
@@ -10,7 +9,7 @@ pipeline {
 		echo 'Stage Build'
 		echo "$pwd"
 		echo "${env.WORKSPACE}"
-		sh "npm install ."
+		sh "npm config list"
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
