@@ -19,6 +19,9 @@ pipeline {
 		   sh "npm -v"
 		   sh "npm install ."
 		}
+		docker('dockereshwar') {
+		   sh "docker -v"
+		}
                 }
             }
        stage('Test') {
