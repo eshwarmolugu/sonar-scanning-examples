@@ -2,6 +2,7 @@ pipeline {
   agent any
   tools {
        maven 'Maven'
+	docker 'dockereshwar'	
         }
   stages {
        stage('CheckOut') {
@@ -19,6 +20,7 @@ pipeline {
 		   sh "npm -v"
 		   sh "npm install ."
 		}
+		sh "docker -v"
                 }
             }
        stage('Test') {
