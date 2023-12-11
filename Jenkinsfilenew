@@ -7,7 +7,9 @@ pipeline {
        stage('Build') {
            steps {
 		echo 'Stage Build'
-		npm install
+		echo $pwd
+		echo ${env.WORKSPACE}
+		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
             }
