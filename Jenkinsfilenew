@@ -14,6 +14,10 @@ pipeline {
 		echo 'Stage Build'
 		echo "$pwd"
 		echo "${env.WORKSPACE}"
+
+		nodejs('nodejseshwar') {
+		    npm config list
+		}
 		// sh "npm -v"
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
