@@ -24,9 +24,10 @@ pipeline {
        stage('Test') {
            steps {
 		echo 'Stage Test'
-		nodejs('nodejseshwar'){
- 		sh "docker -v"
-		} 
+		withDockerContainer(image: 'any', toolName: 'dockereshwar') {
+  		sh "docker -v"
+		}
+ 		
 	        }
             }
       stage('Deploy') {
