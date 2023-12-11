@@ -9,7 +9,7 @@ pipeline {
 		echo 'Stage Build'
 		echo "$pwd"
 		echo "${env.WORKSPACE}"
-		sh "npm config list"
+		sh "npm -v"
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
