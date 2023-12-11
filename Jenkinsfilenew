@@ -4,12 +4,17 @@ pipeline {
        maven 'Maven'
         }
   stages {
+       stage('CheckOut') {
+	steps{
+	git credentialsId: 'eshwar_codedevsnc', url: 'https://github.com/eshwarmolugu/sonar-scanning-examples.git'
+}
+		}
        stage('Build') {
            steps {
 		echo 'Stage Build'
 		echo "$pwd"
 		echo "${env.WORKSPACE}"
-		sh "npm -v"
+		// sh "npm -v"
 		//npm install
                 //sh 'mvn -B -DskipTests clean compile'
                 }
