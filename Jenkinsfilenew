@@ -17,10 +17,8 @@ pipeline {
 
 		nodejs('nodejseshwar') {
 		   sh "npm -v"
+		   sh "npm install ."
 		}
-		// sh "npm -v"
-		//npm install
-                //sh 'mvn -B -DskipTests clean compile'
                 }
             }
        stage('Test') {
