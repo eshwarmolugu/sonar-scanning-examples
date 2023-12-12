@@ -21,6 +21,9 @@ pipeline {
 		   sh "npm install ."
 		}
 		sh "docker -v"
+		//sh "docker build -t servicenowdocker/sndevops-cli:0.01 ." 
+		//sh "docker push servicenowdocker/sndevops-cli:0.01"
+
                 }
             }
        stage('Test') {
